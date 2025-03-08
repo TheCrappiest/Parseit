@@ -1,7 +1,8 @@
 Simple java library for parsing placeholders within files.
 
 Text: yml, json, txt, log \
-Java: jar, class
+Java: jar, class \
+Files without a specific parser will use the default.
 ##
 
 ```
