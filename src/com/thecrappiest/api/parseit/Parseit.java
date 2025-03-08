@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.Map;
 
 import com.thecrappiest.api.parseit.parser.ClassParser;
+import com.thecrappiest.api.parseit.parser.DefaultParser;
 import com.thecrappiest.api.parseit.parser.JarParser;
 import com.thecrappiest.api.parseit.parser.TextParser;
 
@@ -25,7 +26,7 @@ public interface Parseit {
         case "CLASS":
             return new ClassParser(file);
         default:
-            return null;
+            return new DefaultParser(file);
         }
     }
     
